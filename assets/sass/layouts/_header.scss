@@ -1,0 +1,34 @@
+@use "../helpers/helpers" as *;
+
+
+//#region { header }
+
+
+header{
+  $ctext:$c60;
+  // background-color: $c10_a06;
+  // position: fixed;
+  white-space: nowrap;
+  font-weight: 400;
+  z-index: 1;
+
+  &,a{color: $ctext;}
+}
+
+  .hr{
+    display: inline-block;
+    width: $px;
+    height: 100%;
+    background-color: $cbr;
+  }
+  %link__hover{
+    color: $ctext;
+    :hover{
+      color: $chover;
+      cursor: pointer;
+      transition: all $t-03s ease-in-out 0s;
+    }
+  }
+
+//#endregion
+
